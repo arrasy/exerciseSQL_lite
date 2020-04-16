@@ -15,7 +15,7 @@ public class CRUDkontak extends AppCompatActivity {
    //o
     EditText name, phone, alamat, email;
     Spinner tipeUser;String mode="",idUser="0";
-    Button btnSimpan, btnKembali;
+    Button btnSimpan, btnBack;
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         //Handle the back button
@@ -47,7 +47,7 @@ public class CRUDkontak extends AppCompatActivity {
         alamat =(EditText) findViewById(R.id.editTextAlamat);
 
         btnSimpan=(Button) findViewById(R.id.btnsimpan);
-        btnKembali=(Button) findViewById(R.id.btnkembali);
+        btnBack=(Button) findViewById(R.id.btnkembali);
 
         Intent in = this.getIntent();
         mode= in.getStringExtra("mode");
